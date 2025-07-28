@@ -1,27 +1,123 @@
-.full-screen{
-}
+.full-screen{}
 
-.home-Bar{
+.home-bar{
     width: 100%;
-    height: 40px;
+    height: 45px;
 
-    background-color: #0F0F0F;
-    color: white;
+    background-color: transparent;
+     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     
+    /*box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;*/
+    /*box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;*/
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+
+    position: fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
-    
+
 }
 
 .initial-block{
     width: 100%;
     height: 400px;
 
-    background-color: #161616;
-    color: white;
+    background-color: #ffffff;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+
+
+    .button-cv{
+        height: 30px;
+
+        background-color: transparent;
+
+        border: 1px solid #007AFF;
+        border-radius: 10px;
+        border-color: #007AFF;
+        color: #007AFF;
+
+        cursor: pointer;
+
+        transition: background-color 0.2s, color 0.2s;
+    }
+
+    .button-cv:hover{
+        background: #007AFF;
+        color: #ffffff;
+    }
+
+    .button-social-media{
+        height: 30px;
+
+        background-color: #007AFF;
+
+        border: 1px solid #007AFF;
+        border-radius: 10px;
+        border-color: transparent;
+        color: #ffffff;
+
+        cursor: pointer;
+
+        transition: background-color 0.2s, color 0.2s;
+    }
+
+    .button-social-media:hover{
+        background:#006ee4;
+    }
+
+}
+
+.titles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: -20px;
+}
+
+
+
+
+.font-title {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+
+    font-style: normal;
+    font-size: 35px;
+
+    margin-bottom: -20px;
+
+    color: #007AFF;
+}
+
+.social_media_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.font-text{
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
 }
