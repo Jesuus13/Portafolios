@@ -8,4 +8,20 @@ import { Component } from '@angular/core';
 })
 export class MainPageComponent {
 
+
+
+  linkedInButton() {
+    window.open('https://www.linkedin.com/in/jes%C3%BAs-sanchez-villarrubia-9b540336a/');
+  }
+
+  gitHubButton() {
+    window.open('https://github.com/Jesuus13');
+  }
+
+
+  scrollToSection(sectionId: string) {
+    const valor = document.getElementById(sectionId)
+    if (valor) valor.scrollIntoView({ behavior: 'smooth'});
+  }
+
 }

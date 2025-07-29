@@ -1,4 +1,18 @@
-<div class="home-bar">Barra</div>
+<div class="home-bar font-text">
+    <div class="perfil_section">
+        
+    </div>
+
+
+    <div class="menu_bar">
+        <p (click)="scrollToSection('sobre_mi')">Sobre mi</p>
+        <p (click)="scrollToSection('')">Experiencia</p>
+        <p (click)="scrollToSection('')">Proyectos</p>
+        <p (click)="scrollToSection('')">Skills</p>
+    </div>
+</div>
+
+
 <div class="initial-block font-text">
     
     <button id="cv" class="button-cv font-text">
@@ -7,14 +21,21 @@
 
     <div class="titles">
         <h2 class="font-title">Web Developer</h2>
-        <h1 class="montserrat">Jesús Sánchez Villarrubia</h1>
+        <h1 class="montserrat" style="color: white;">Jesús Sánchez Villarrubia</h1>
     </div>
 
     <p style="color: #8E8E93;">Junior programmer with Angular & Java</p>
 
     <div class="social_media_links">
-        <input class="button-social-media font-text" type="button" value="Linkedin ➡">
-        <input class="button-social-media font-text" type="button" value="Github ➡">
+        <input class="button-social-media font-text" type="button" (click)="linkedInButton()" value="Linkedin ➡">
+        <input class="button-social-media font-text" type="button" (click)="gitHubButton()" value="Github ➡">
     </div>
 
+    <div class="image_technologies_list">
+        <img src="" alt="">
+    </div>
+</div>
+
+<div class="information_block">
+    Information Section
 </div>
